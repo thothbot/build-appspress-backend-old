@@ -10,7 +10,6 @@ libraryDependencies ++= { \n\
       "io.baratine" % "baratine" % "1.0.1", \n\
       "org.postgresql" % "postgresql" % "9.4.1212", \n\
       "redis.clients" % "jedis" % "2.9.0", \n\
-      "com.google.code.gson" % "gson" % "2.7", \n\
       "biz.source_code" % "base64coder" % "2010-12-19", \n\
       "org.apache.commons" % "commons-lang3" % "3.5", \n\
       "commons-io" % "commons-io" % "2.5", \n\
@@ -26,7 +25,7 @@ libraryDependencies ++= { \n\
 mkdir /app/project && \
 
 echo $'addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.4")' > /app/project/plugins.sbt && \
-echo $'sbt.version=0.13.13' > /app/project/build.properties && \
+echo $'sbt.version=0.13.15' > /app/project/build.properties && \
 
 cd /app && sbt package && \
 
